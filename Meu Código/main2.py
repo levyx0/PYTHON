@@ -3,7 +3,7 @@
 #Mostrando o queo programa faz.
 print("CAIXA ELETRÔNICO")
 #valor total do usuário
-saldo_total = float(2000)
+saldo_total = float(10700)
 #perguntando ao usuário sobre as opções e salvando na variavel "caixa_eletronico"
 caixa_eletronico = int(input("Olar o que deseja? (Sacar(1) Depositar(2) Ver saldo(3)): "))
  
@@ -28,6 +28,7 @@ elif caixa_eletronico == 2:
 #Se o usuário digitar a opção 3
 elif caixa_eletronico == 3:
     print("Seu saldo é: R$", saldo_total)
+
 
 
 
