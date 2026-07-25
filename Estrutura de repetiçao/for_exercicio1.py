@@ -2,5 +2,5 @@
 
 contador = 1
 
-for contador in range(11):
+for contador in range(101):
    print(contador)

@@ -2,14 +2,11 @@
 
 #Como printar "Olá Mundo 100 vezes."
 
-# for i in range(10):
-#     print("Olá mundo")
+for n in range(101):
+    if n  % 2 == 0:
+       print(n)
 
 
-#Repetindo listas
 
-nomes = ["Levy", "Gardênia", "Samuel"]
 
-for nome in nomes:
-    print(nomes)
       
