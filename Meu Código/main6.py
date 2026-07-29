@@ -96,4 +96,81 @@
 
 #2 Crie uma lista com 5 números e imprima apenas os números pares:
 
-numeros = [44, 23, 10, 36, 50, 84, 92]
+# numeros = [44, 23, 47, 11, 10, 36, 50, 84, 92]
+# for numero in numeros:
+#     if numero % 2 == 0:
+#        print(numero)
+
+
+
+
+#Peça ao usuário 5 números usando input() e armazene-os em uma lista.
+#Calcule a soma e a média dos números da lista do exercício anterior
+
+# num1 = float(input("Digite seu primeiro número: "))
+# num2 = float(input("Digite seu segundo número: "))
+# num3 = float(input("Digite seu terceiro numero: "))
+# num4 = float(input("Digite seu quarto número: "))
+# num5 = float(input("DIgite seu quinto número: "))
+
+# numero = [num1, num2, num3, num4, num5]
+
+
+# media = sum(numero) / len(numero)
+
+
+# print(numero)
+# print("Media dos numeros: ", media)
+
+
+#Concatenar
+# nome = "Marcos"
+# sobrenome = "Levy"
+
+# print(nome +" "+ sobrenome)
+
+
+
+#Operações 
+#exercicíos de Operações
+
+# Peça dois números ao usuário e mostre:
+
+# Soma
+# Subtração
+# Multiplicação
+# Divisão
+
+# num1 = float(input("Digite seu primeiro número: "))
+# num2 = float(input("Digite seu segundo número: "))
+
+# print("Soma: ", num1 + num2)
+# print("Subtração: ", num1 - num2)
+# print("Multiplicão: ", num1 * num2)
+# print("Divisão: ", num1 / num2)
+
+
+
+#Exercícios com todos os assuntos que eu já Estudei
+
+#Exercício 1 - Maior de idade
+
+nome = input("Me diga seu Nome: ")
+idade = int(input("Me diga sua idade: "))
+
+pessoa = {
+  "nome": nome,
+  "idade": idade
+}
+
+print("Nome: ", pessoa["nome"])
+print("Idade :", pessoa["idade"], "Anos")
+
+if idade >= 18:
+   print("Maior de idade")
+
+else: 
+   print("Menor de Idade")   
+
+
+
