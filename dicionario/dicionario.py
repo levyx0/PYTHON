@@ -85,7 +85,7 @@ pessoa = {
 }
 
 for chave, valor in pessoa.items():
-     print(chave,valor)
+     print(chave, ":", valor)
 
 
 #Verificando se uma chave existe
@@ -105,7 +105,7 @@ pessoa = {
      "nome": "Levy"
 }
 
-print(pessoa["idade"])
+# print(pessoa["idade"])
 #Isso gera um erro: KeyError: 'idade'
 
 #Uma forma mais segura é usar get(): print(pessoa.get("idade"))
@@ -166,3 +166,45 @@ print("Nome: ", funcionario["nome"])
 print("Idade: ", funcionario["idade"])
 print("Cargo: ", funcionario["Cargo"])
 print("Salário: ", funcionario["salario"])
+
+
+
+#Dicionário + if/else + funções
+
+#criando um dicionário
+produtos = {
+     "perfume": 120,
+     "shampoo": 25,
+     "sabonete":10
+}
+#criando uma função:
+def consultar_preco(nome):
+    if nome in produtos:
+         return produtos[nome]
+    else:
+         return "Produto não encontrado"
+
+#chamando a funcão:
+print(consultar_preco("shampoo"))
+
+
+
+#Dicionários dentro de Listas
+#Você também pode guardar vários cadastros em uma lista de dicionários.
+
+clientes = [
+     {"nome": "Ana", "idade": 22},
+     {"nome": "Giovanna", "idade": 24},
+     {"nome": "Marcos", "idade": 26}
+]
+
+#Para acessar o nome do primeiro cliente:
+
+print(clientes[0]["nome"])
+# Por quê?
+# 1. clientes[0] acessa o primeiro dicionário da lista.
+# 2. ["nome"] acessa a chave "nome" desse dicionário.
+
+#Para exibir todos os clientes:
+for cliente in clientes:
+     print(cliente["nome"], cliente["idade"])

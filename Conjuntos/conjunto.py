@@ -52,3 +52,71 @@ conjunto = set(lista)
 print(conjunto)
 
 
+#Criar conjunto vazio:
+conjunto = set()
+
+
+#Removendo elementos:
+frutas = {"maçã", "banana", "uva"}
+frutas.remove("banana")
+print(frutas)
+
+
+#discard() — remove o elemento se ele existir, mas não gera erro se ele estiver ausente.
+
+frutas = {"maçã", "uva"}
+frutas.discard("banana") # sem erro, mesmo que nao exista
+print(frutas)
+
+
+#Verificando se um elemento existe
+produtos = {"Perfumes", "Sabonete", "Shampoo"}
+
+if "Perfumes" in produtos:
+    print("Produto Encontrado!")
+else:
+    print("Produto não Encontrado!")
+
+
+
+
+#Pecorrendo um conjunto com for
+#também podemos percorrer os elementos de um conjuto.
+
+nomes = {"João", "Maria", "Pedro", "Ana"}
+
+for nome in nomes:
+    print(nome)
+
+
+
+#O programa imprime todos os nomes, mas a ordem não é garantida.
+
+#Conjunto  X  Lista
+#Em conjuto você não acessa os elementos por posição.
+
+# nomes = {"João", "Maria", "Pedro"}
+# print(nomes[0])
+
+#Esse código gera erros, pois conjuntos naão permitem acesso por índice.
+
+
+
+#Removendo duplicatas de uma lista.
+
+
+produtos = [
+    "perfumes",
+    "shampoo",
+    "perfume",
+    "sabonete",
+    "shampoo"
+]
+
+produtos_unicos = set(produtos)
+print(produtos_unicos)
+
+#O set() transforma a lista em um conjunto, eliminando as duplicatas.
+
+#Se depois precisar voltar para uma lista:
+produtos_unicos = list(set(produtos))
