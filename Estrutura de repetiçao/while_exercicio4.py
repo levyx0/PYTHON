@@ -3,9 +3,9 @@
 #Depois mostre:
 #FIM!
 
-contador = 10
+contador = 20
 
-while contador >= 1:
+while contador >= 0:
     print(contador)
     contador -= 1
 
